@@ -22,6 +22,12 @@ public class SpringReplitApplication {
 		public ResponseEntity<String> echo(){
 			return ResponseEntity.ok().body("api no ar");
 		}
+
+		@GetMapping("/ola")
+		public ResponseEntity<String> getMethodName() {
+			return ResponseEntity.ok().body("ola replit");
+		}
+		
 	}
 
 }
